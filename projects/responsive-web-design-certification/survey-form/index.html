@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="top">
+    <h1 id="title">Meditation Form</h1>
+    <p id="description">Thank you for your time, help us and enjoy.</p>
+  </header>
+  <div class="all">
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label><br>
+      <input type="text" name="name" id="name" class="form-in" placeholder="Enter your name" required /><br>
+
+      <label id="email-label" for="email">Email</label><br>
+      <input type="email" name="email" id="email" class="form-in" placeholder="Enter your e-mail" required /><br>
+
+      <label id="number-label" for="number">Age</label><br>
+      <input type="number" name="age" id="number" class="form-in" min="5" max="120" placeholder="Enter your age" /><br>
+
+      <p>What is your intention with the practice of meditation?</p>
+      <select id="dropdown" name="practice" class="form-in" required>
+        <option disabled selected value>Select the option</option>
+        <option value="concentration">Improve my concentration</option>
+        <option value="esteem">Improve my self esteem</option>
+        <option value="relax">Just relax</option>
+        <option value="life">Change my life</option>
+        <option value="other">Other</option>
+      </select><br>
+
+      <p>Have you ever practiced meditation?</p>
+      <label>
+        <input name="practiced" value="yes" type="radio" class="radio" checked />Yes
+      </label>
+      <label>
+        <input name="practiced" value="no" type="radio" class="radio" />No
+      </label><br>
+
+      <p>What are your expectations of practicing mindfulness?</p>
+      <label>
+        <input name="expectations" value="better" type="checkbox" class="checkbox" />I believe I will be a better person
+      </label>
+      <label>
+        <input name="expectations" value="nature" type="checkbox" class="checkbox" />I believe I will take more care of nature
+      </label>
+      <label>
+        <input name="expectations" value="sport" type="checkbox" class="checkbox" />Improve my fitness
+      </label>
+      <label>
+        <input name="expectations" value="others" type="checkbox" class="checkbox" />Other expectations
+      </label><br>
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" class="textarea" name="comment" placeholder="Please, enter your comment here..."></textarea>
+
+      <button type="submit" id="submit" class="button">
+        Submit
+      </button>
+
+    </form>
+  </div>
+</body>
+
+</html>
