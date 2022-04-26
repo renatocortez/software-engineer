@@ -2,7 +2,7 @@
  
  FreeCodeCamp - 3000h - Full Stack Developer Course
  
- 12 modules
+ 11 modules
  
  1 - RESPONSIVE WEB DESIGN
  
