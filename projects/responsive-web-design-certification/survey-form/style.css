@@ -1,18 +1,18 @@
 @charset "UTF-8";
- 
 
 body {
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 0;
   font-family: Arial, courier, sans-serif;
   font-size: 1em;
   text-align: center;
   background: linear-gradient(#eeaeca, #afcbec);
-  
 }
 
 .top {
   padding: 10px;
   margin-bottom: 10px;
-  
 }
 
 #description {
@@ -26,11 +26,10 @@ p {
   background-color: lightblue;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  width: 800px;
-  height: auto;
-  margin: auto;
-    
 }
 
 label {
@@ -40,27 +39,13 @@ label {
   margin-bottom: 0.3em;
 }
 
-@media (min-width: 500px) {
-  .all {
-    max-width: 600px;
-  }
-}
-
 form {
   padding: 10px;
-
-
-}
-
-@media (min-width: 500px) {
-  form {
-    padding: 10px;
-  }
 }
 
 div {
   margin: 0 auto 1.25rem auto;
-  padding: 10px
+  padding: 10px;
 }
 
 .form-in {
@@ -73,7 +58,6 @@ div {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-     
 }
 
 .radio,
@@ -88,16 +72,30 @@ div {
   min-height: 200px;
   width: 100%;
   padding: 10px;
-  
 }
 
 .button {
-  border-radius: 3px;
-  width: 30%;
-  height: 40px;
+  padding: 15px 30px;
+  border: none;
+  background-color: aquamarine;
+  color: rgb(19, 19, 20);
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
+.button:hover {
+  background-color: rgb(4, 175, 243);
+  color: azure;
+  transform: translateY(-2px);
+}
 
-
-
+@media (min-width: 480px) {
+  .all {
+    max-width: 600px;
+  }
+  form {
+    padding: 10px;
+  }
+}
