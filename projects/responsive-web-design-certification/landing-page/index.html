@@ -1,103 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Landing Page</title>
-        <link rel="stylesheet" href="style.css">
-      </head>
-<body>
-        <header id="header">
-          <img id="header-img" src="https://www.knog.com/wp-content/uploads/2019/07/Knog_logo_black.png" alt="Knog logo">
-          <nav class="top-nav" id="nav-bar">
-            <a class="nav-link" href="#overview">Overview</a>
-            <a class="nav-link" href="#video">Demostration</a>
-            <a class="nav-link" href="#features">Features</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </nav>
-      
-        </header>
-        <div class="form">
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <h1>Blinder Road 400</h1>
-            <h3>The best cycle light's </h3>
-            <input name="email" type="email" id="email" placeholder="Enter your email..." required /> <br>
-            <input type="submit" id="submit"/>
-          </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="main">
+      <header id="header">
+        <div id="img-top">
+          <img id="header-img" src="" alt="Top Logo" />
         </div>
-        <div class="overview" id="overview">
-          <h3>Overview</h3>
+
+        <nav id="nav-bar">
           <ul>
-            <li>When introduced in 2012, Blinder Road set the standard by which any serious road cyclist's lights were measured. Combining lightweight design, perfect beam angles, powerful light output and its unique mounting system – the Blinder was an instant classic.</li>
-      
-            <li>Now redesigned for 2020, Knog are proud to present the all new Blinder Road 400.</li>
-      
-            <li>The Blinder Road 400 features all the best attributes of our original Blinder Road, but now with a powerful 400 lumens of light output. When this increase of illumination power is combined with the carefully considered beam angles for road riding, you have Knog's most powerfully perfect road bike light ever.</li>
+            <li><a href="#technology" class="nav-link">Technology</a></li>
+            <li><a href="#video" class="nav-link">How to</a></li>
+            <li><a href="#specs" class="nav-link">Specs</a></li>
           </ul>
-      
-        </div>
-      
-        <div class="video">
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_iP7350BZLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="features" id="features">
-          <div class="column">
-            <div class="card">
-              <h2>ADVANCED LED'S & OPTICS</h2>
-              <p>There is no such thing as a universal bike-light. Depending on end use and even bike type dictate the best bike light to use.
-                Blinder Road utilises 2 LED's each independently capable of 250lm of output or 400lm when use together. The LHS optic has 12-degree beam providing a spotlight which is perfect for racing and fast riding on smooth roads. Whilst the RHS Optic has 32-degree beam proving a flood light which is best suited for use on slower rides on bumpy or uneven riding conditions.
-      
-                Each LED have a variety of flash patterns and function independent of the other.</p>
-      
+        </nav>
+      </header>
+
+      <section id="one">
+        <h1>Master Every Shot</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <input type="submit" type="submit" value="SUBMIT" class="button" />
+        </form>
+      </section>
+      <div class="container">
+        <section id="technology">
+          <div class="grid">
+            <div class="dif">
+              <h2>DJI Stabilization Technology</h2>
+              <p>
+                DJI OM 5 gives users the ability to film with flawless
+                stabilization, resulting in smooth footage that wows.
+              </p>
             </div>
           </div>
-          <div class="column">
-            <div class="card">
-              <h2>UNIQUE FASTENING SYSTEM</h2>
-              <p>Utilising silicone to create the elastomeric strap combined with an over-molded polycarbonate clip system allows Blinder Road to adapt to the many various configurations required of today's road cyclist's, many of whom have GPS systems on their bikes.
-      
-                The Blinder Road is stylish and versatile enough to fit with a multitude of today's high-end bicycle cockpits.
-      
-                (Includes two removable silicone straps for bars 22-28mm & 29-35mm)</p>
-      
+
+          <div class="grid">
+            <div class="dif">
+              <h2>New Design, Better Results</h2>
+              <p>
+                Foldable and lightweight, OM 5 was designed to fit in the palm
+                of your hand. That means you can easily take it along for any
+                adventure. And for the first time, we've included a built-in
+                extension rod, letting you include more friends in a selfie or
+                capture footage from unique new angles.
+              </p>
             </div>
           </div>
-          <div class="column">
-            <div class="card">
-              <h2>WATERPROOF & INTEGRATED USB CHARGING</h2>
-              <p>The Blinder road is 100% waterproof with a rating of IP67, which means you submerge your light in depths greater than 1 meter for over 30 minuets without damage (note if you are under 1 meter of water on your bike, the waterproofing of your light is probably the last of your worries).
-      
-                The light is charged via integrated USB, which means so it does not require additional cables to charge from a USB Port as well as no need for single use batteries.</p>
-      
+
+          <div class="grid">
+            <div class="dif">
+              <h2>Shoot Like a Pro</h2>
+              <p>
+                ShotGuides automatically recognizes your environment and
+                recommends helpful shooting tips and creative templates. From
+                recording to editing, this advanced new feature lets even
+                first-time users capture stunning results.
+              </p>
             </div>
           </div>
-          <div class="column">
-            <div class="card">
-              <h2>INTUITIVE FUNCTIONALITY</h2>
-              <p>When your Blinder is running low on battery, a red led will light up next to the button. This ring will turn green and then turn off once the Blinder is fully charged and ready to go.
-      
-                With a design that is wider rather than longer, accommodating the 2 optics side by side keeps the centre of gravity as close to the handlebar as possible which avoids the potential for movement on bumpy roads.
-      
-                Finally, the Blinder Road's buttons and strap closures are all at the perfect ergonomic angle to presents themselves to the rider buttons are long enough to be used while wearing gloves.</p>
-      
-            </div>
+        </section>
+        <section class="video">
+          <iframe
+            id="video"
+            height="400"
+            src="https://www.youtube.com/watch?v=zqR_mDdThdA"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="specs">
+          <div class="dji">
+            <div class="top">DJI OM 5</div>
+
+            <ol>
+              <li>
+                Dimensions Unfolded: 264.5×111.1×92.3 mm <br />
+                Folded: 174.7×74.6×37 mm
+              </li>
+              <li>
+                Weight: 292 g <br />
+                Magnetic Phone Clamp: 34 g
+              </li>
+              <li>Battery: 1000 mAh</li>
+              <li>Chargin Port: USB-C</li>
+              <li>
+                Wireless Mode <br />
+                Model: Bluetooth Low Energy 5.0
+              </li>
+              <li>App: DJI Mimo</li>
+            </ol>
+            <h2>From USD $159</h2>
+            <button class="btn">Buy Now</button>
           </div>
-        </div>
-        <div class="buy">
-          <button class="btn">Add to cart - U$99</button>
-        </div>
-        <footer>
+        </section>
+        <footer id="footer">
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Faqs</a></li>
-            <li><a href="#">Terms os service</a></li>
+            <li><a href="#">DJI Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Business Information</a></li>
           </ul>
-          <span>Knog is a registered international trademark. All rights reserved. </span>
+          <span>Copyright © 2022 DJI All Rights Reserved.</span>
         </footer>
-       <script type="text/javascript" src="script.js"></script>     
-</body>
+      </div>
+    </div>
+  </body>
 </html>
