@@ -9,6 +9,16 @@
   --clr-grey-6: hsl(210, 36%, 96%);
   --clr-white: #fff; 
   --clr-black: #000;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
 }
 
 html {
@@ -26,46 +36,91 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#main {
-    border: 1px solid black;
-}
-
-#header {
-    border: 1px solid black;
-    margin: 20px;
-    padding: 0 13px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    z-index: 100;
-    justify-content: space-between;
-    align-items: center;
-    vertical-align: inherit;
-}
- #img-top {
-     border: 1px solid black;
- }
-
- #nav-bar {
-     border: 1px solid black;
- }
-
 ul {
+    list-style-type: none;
+}
 
-} 
+ol {
+    list-style-type: none;
+}
 
- li {
-     list-style: none;
+a {
+    text-decoration: none;
+}
 
- }
+div {
+    background-color: var(--clr-white);
+    box-shadow: var(--light-shadow);
+}
 
- a {
-     
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 
- }
+}
+
+
+}
+
+.logo {
+    height: 40px;
+}
+
+.links a {
+    color: var(--clr-grey-3);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+}
+
+.links a:hover {
+    background: var(--clr-grey-2);
+    color: var(--clr-grey-4);
+    padding-left: 1.5rem;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-links {
+    height: 10rem;
+}
+
+@media screen and (min-width: 800px) {
+    .nav-center {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    
+    }
+    .links {
+      /* IMPORTANT TO ADD */
+      height: auto;
+      display: flex;
+    }
+    .links a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      padding: 0;
+      background: transparent;
+    }
 
 #one {
     border: 1px solid black;
@@ -85,8 +140,14 @@ input {
     height: 40px;
     border-radius: 3px;
     border: none;
-    background-color: var(--clr-grey-5);
+    background-color: var(--clr-grey-4);
+    cursor: pointer;
 
+}
+
+.button:hover {
+    background-color: var(--clr-grey-5);
+    
 }
 
 .container {
@@ -127,8 +188,13 @@ input {
     height: 40px;
     border-radius: 3px;
     border: none;
-    background-color: var(--clr-grey-5);
+    background-color: var(--clr-grey-4);
+    cursor: pointer;
 
+}
+
+.btn:hover {
+    background-color: var(--clr-grey-5);
 }
 
 #footer {
